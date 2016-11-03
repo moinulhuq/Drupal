@@ -1,0 +1,5 @@
+services:
+    monotool.route_subscriber:
+        class: Drupal\monotool\Routing\RouteSubscriber
+        tags: 
+            - { name: event_subscriber }
