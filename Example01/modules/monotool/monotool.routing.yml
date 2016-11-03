@@ -1,0 +1,11 @@
+monotool:
+    path: '/monotool/{pagename}'
+    defaults:
+        _controller: '\Drupal\monotool\Controller\MonotoolController::customPage'
+        _title: 'My custom page'
+    requirements:
+        _permission: 'access content'
+    options:
+        parameters:
+            name:
+                type: entity: monotool
