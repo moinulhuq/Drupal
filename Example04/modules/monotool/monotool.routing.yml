@@ -1,0 +1,7 @@
+monotool:
+    path: '/monotool'
+    defaults:
+        _controller: '\Drupal\monotool\Controller\MonotoolController::customPage'
+        _title: 'My custom page'
+    requirements:
+        _permission: 'view mymodule pages'
