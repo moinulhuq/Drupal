@@ -1,0 +1,20 @@
+global-styling:
+    version: VERSION
+    css:
+        theme:
+            css/style.css: {}
+    js:
+        js/scripts.js: {}
+    dependencies:
+        - core/jquery
+        - core/jquery.ui
+fontawesome:
+    remote: http://fontawesome.io/
+    version: 4.4.0
+    license:
+        name: SIL OFL 1.1
+        url: http://fontawesome.io/license/
+        gpl-compatible: true
+    css:
+        base:
+            https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }
