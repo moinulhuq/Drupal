@@ -1,0 +1,31 @@
+{# comments #}
+
+{# Setting a variable #}
+{% set name = 'Drupal' %}
+<h1>Welcome to {{ name }}</h1>
+
+{# Dumping variables #}
+{{ dump(name) }}
+
+{# Dumping multiple variables #}
+<pre>{{ dump(name, is_front) }}</pre>
+
+{# Apply filter to name variable #}
+<p>{{ name|upper }} Rocks.</p>
+
+{# Apply filter for paragraph #}
+{% filter upper %}
+	<p>{{ name }} is the best cms around.</p>
+{% endfilter %}
+
+{# Conditional logic #}
+{% set offline = true %}
+
+{% if offline == true %}
+	<p>Website is in maintenance mode.</p>
+{% endif %}
+
+{# Looping #}
+{% for i in 0 ..10 %}
+	{{ i }}
+{% endfor %}
