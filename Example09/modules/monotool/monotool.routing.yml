@@ -1,0 +1,7 @@
+monotool:
+    path: '/monotool'
+    defaults:        
+        _title: 'My custom form'
+        _form: '\Drupal\monotool\Form\ExampleForm'
+    requirements:
+        _permission: 'view mymodule pages'
