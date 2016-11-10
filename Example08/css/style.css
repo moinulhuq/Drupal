@@ -1,0 +1,28 @@
+.city {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}
+.headerimg{
+	background: #ffffff url("../images/header.png") no-repeat right top;
+}
+.mainnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.mainnav ul li {
+    float: left;
+	color: "white";
+}
+
+.mainnav ul li a {
+    display: block;
+    padding: 8px;
+}
