@@ -11,7 +11,9 @@ sudo su
 make directory under html folder and give permission to read and write
 
 root@moin-VirtualBox:/var/www/html# mkdir drupal
+
 root@moin-VirtualBox:/var/www/html# cd drupal
+
 root@moin-VirtualBox:/var/www/html/drupal# 
 
 To remove folder of files html folder 
