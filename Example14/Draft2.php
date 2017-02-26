@@ -42,8 +42,19 @@
 		->condition('uid.entity.name', 'moin')
 		->execute();
 
-#To 'nid' in descending order.
+#To sort 'nid' in descending order.
 
   $query = \Drupal::entityQuery('node')
 		->sort('nid', 'DESC')
 		->execute();
+
+#To count how many user created from yesterday.
+  $time = time();
+  $yesterday = $time - 60*60*24;
+
+  $query = \Drupal::entityQuery('user')
+		->condition('created', $yesterday, '>=')
+		->count()
+		->execute();
+
+#
