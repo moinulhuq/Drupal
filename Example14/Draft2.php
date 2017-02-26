@@ -8,8 +8,8 @@
   
 #To get all nid of 'Basic Page'
 
-	$query = \Drupal::entityQuery('node')
-					->condition('type', 'page')
-					->condition('status', 1)
-					->execute();
+  $query = \Drupal::entityQuery('node')
+		->condition('type', 'page')
+		->condition('status', 1)
+		->execute();
 
