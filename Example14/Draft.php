@@ -21,7 +21,12 @@
 #To create node of article type
 	$node = \Drupal::entityTypeManager()->getStorage('node')->create(array('type' => 'article', 'title' => 'Another node'));
 	$node->save();
+#To delete one node
+  $entity = \Drupal::entityTypeManager()->getStorage('node')->load(1);
+  $entity->delete();
 
+#To delete multiple nodes
+  \Drupal::entityTypeManager()->getStorage($entity_type)->delete(array($id1 => $entity1, $id2 => $entity2));
 
 https://www.drupal.org/docs/8/api/entity-api/working-with-the-entity-api
 http://www.qed42.com/blog/url-alias-update-using-batch-api-drupal-8
