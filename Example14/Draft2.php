@@ -63,3 +63,10 @@
 		->condition('status', 1)
 		->pager(2)
 		->execute();
+
+#To load nid of node (here 0 is start 3 is nid).
+
+  $query = \Drupal::entityQuery('node')
+		->condition('status', 1)
+		->range(0,3)
+		->execute();
