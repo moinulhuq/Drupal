@@ -57,4 +57,9 @@
 		->count()
 		->execute();
 
-#
+#To load nid of node (here it will show 2 nid).
+
+  $query = \Drupal::entityQuery('node')
+		->condition('status', 1)
+		->pager(2)
+		->execute();
