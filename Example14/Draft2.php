@@ -28,3 +28,22 @@
   $query = \Drupal::entityQuery('node')
 		->condition('created', $last_year, '>=')
 		->execute();
+
+#To find particular nodes which nid is equal to 4 or greater than 4.
+
+  $query = \Drupal::entityQuery('node')
+		->condition('nid', 4, '>=')
+		->execute();
+  result = 4, 5
+
+#To find particular nodes which is created by 'moin'.
+
+  $query = \Drupal::entityQuery('node')
+		->condition('uid.entity.name', 'moin')
+		->execute();
+
+#To 'nid' in descending order.
+
+  $query = \Drupal::entityQuery('node')
+		->sort('nid', 'DESC')
+		->execute();
