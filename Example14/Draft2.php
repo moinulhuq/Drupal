@@ -20,4 +20,11 @@
 		->condition('roles', 'Administrator', 'CONTAINS')
 		->execute();
 
-#To
+#To find particular nodes published in the last year.
+
+  $now = time();
+  $last_year = $now - 60*60*24*365;
+
+  $query = \Drupal::entityQuery('node')
+		->condition('created', $last_year, '>=')
+		->execute();
